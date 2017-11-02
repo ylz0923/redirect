@@ -12,7 +12,7 @@ public class Redirect extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String url = req.getRequestURL().toString();
-		url = url.replaceAll("ylz0923.top", "www.ylz0923.top");
+		url = url.replaceFirst("ylz0923.top", "www.ylz0923.top");
 		//System.out.println(url);
 		resp.sendRedirect(url); 
 	}
